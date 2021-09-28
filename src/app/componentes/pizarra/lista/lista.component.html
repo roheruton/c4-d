@@ -1,0 +1,23 @@
+
+   <div class="card-group" style="width: 30rem;">
+   <div class="card " 
+      style="width: 13rem; margin-bottom: 20px;margin-right: 20px; background-color: rgb(243, 248, 201);"
+         *ngFor="let item of items" >
+            
+      <div class="card-body  " >
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmCUfHgWmR1o-d-TbTJAXvRhiibmS8mGO0OPY8lbqnUP385HD1SeOMEL3sW4Jl-OHkVK54BB3sLI&usqp=CAU" alt="Card image cap">
+        <h4 class="card-title"> {{item.nombre}}</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Descripción: {{item.descripcion}}</h6>
+        <p class="card-text">Fecha Alta: {{item.fecha_alta | date:'dd/MM/yyyy HH:MM:SS'}}</p>
+        <a [routerLink]="['/pizarra']" routerLinkActive="router-link-active"  class="card-link">Ingresar</a>
+        <a href="#" class="card-link">Añadir Usuarios</a>
+      </div>
+
+
+    </div>
+  </div>
+ 
+ 
+
+
+

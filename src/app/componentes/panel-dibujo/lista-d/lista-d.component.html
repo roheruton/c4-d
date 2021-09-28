@@ -1,0 +1,20 @@
+<div class="card-group" style="width: 22rem; ">
+    <div class="card tarjeta " 
+          *ngFor="let item of itemsModelos" >
+             
+       <div class="card-body  " >
+         <img class="card-img-top" src="https://c4model.com/img/bigbankplc-Containers.png" alt="Card image cap">
+         <h4 class="card-title"> {{item.nombre}}</h4>
+         <h6 class="card-subtitle mb-2 text-muted">Descripción: {{item.descripcion}}</h6>
+         <p class="card-text">Fecha Alta: {{item.fecha_alta | date:'dd/MM/yyyy HH:MM:SS'}}</p>
+         
+         <button type="button" class="btn btn-success"[routerLink]="['/modelo']" routerLinkActive="router-link-active"  >
+            Modificar
+        </button>
+       </div>
+ 
+ 
+     </div>
+   </div>
+
+
